@@ -2,16 +2,24 @@ import random #imports the random function
 part1 = True #starts part 1
 addpoint = 1 #creats addpoint global variable
 
-class Casino:
-  def __init__(self, city, country):
-    self.city = city
-    self.country = country
-  def introduce_self (self):
-    print ("Casino is located in: " + self.city)
+g = open("paulread.txt", "a")
+g.write("Hello World")
+g.close()
+
+g = open("paulread.txt", "r")
+print(g.read())
+
+class Casino: #creates a class called casino
+  def __init__(self, city, country): #defines the class
+    self.city = city #defines city
+    self.country = country #defines country
+  def introduce_self (self): #defines the function introduce_self
+    print ("Casino is located in: " + self.city) #prints
     print ("Which is in the country of: " + self.country)
-c1 = Casino ("Las Vegas", "USA")
+c1 = Casino ("Las Vegas", "USA") 
 c2 = Casino ("London", "England")
 c1.introduce_self()
+
 while part1: #tells what happens in part 1
   introlist = ["Welcome to Dice Roll! Type start to begin! ", "to Dice Roll!", "Type start to begin!"] #creates a list
   print(introlist[-3]) #prints the member 3rd from the end
@@ -25,9 +33,9 @@ while part1: #tells what happens in part 1
     sum = 0
     sides = 1
     while sides<7:
-        sum = sum + sides
-        print("Numbers of sides: " + sides + " Dots on sides: " + sum)
-    part1 = False #stopping at part 1 - will not repeat
+      sum = sum + sides
+      print("Numbers of sides: " + str(sides) + " Dots on sides: " + str(sum))
+      part1 = False #stopping at part 1 - will not repeat
 
 while part2: #starts part 2
   def give_point(): #defining the give point function
@@ -55,3 +63,9 @@ while part3:
 
   while playernumber < 2: #gives perameters to the funtion
     cheer_function()#initiates the cheer function
+
+g = open("paulread.txt", "a")
+g.write("Hello World")
+g.close()
+g = open("paulread.txt", "r")
+print(g.read())
