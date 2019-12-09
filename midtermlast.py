@@ -7,8 +7,8 @@ class Casino:
     self.city = city
     self.country = country
   def introduce_self (self):
-    print ("Casino is in " + self.city)
-    print ("Which is in the country of " + self.country)
+    print ("Casino is located in: " + self.city)
+    print ("Which is in the country of: " + self.country)
 c1 = Casino ("Las Vegas", "USA")
 c2 = Casino ("London", "England")
 c1.introduce_self()
