@@ -12,7 +12,7 @@ class Casino:
 c1 = Casino ("Las Vegas", "USA")
 c2 = Casino ("London", "England")
 c1.introduce_self()
-  while part1: #tells what happens in part 1
+while part1: #tells what happens in part 1
   introlist = ["Welcome to Dice Roll! Type start to begin! ", "to Dice Roll!", "Type start to begin!"] #creates a list
   print(introlist[-3]) #prints the member 3rd from the end
   if input() == "start": #if the input = start, it will print the text bellow
