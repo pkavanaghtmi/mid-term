@@ -32,7 +32,7 @@ while part1: #tells what happens in part 1
     part1 = False #stopping part 1
     part2 = True #starting part 2
   else:
-    print("Before you go, watch me add up the sides of the dice!") #prints
+    print("Before you go, watch me infinitley add up the sides of the dice!") #prints
     sum = 0
     sides = 1
     while sides < 7:
@@ -57,3 +57,4 @@ while part2: #starts part 2
     print("Yay! " + str(playername) + " wins with a score of:" + str(playernumber))
     give_point()
     part2 = False
+
