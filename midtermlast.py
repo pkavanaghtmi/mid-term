@@ -2,12 +2,12 @@ import random #imports the random function
 part1 = True #starts part 1
 addpoint = 1 #creats addpoint global variable
 
-g = open("paulread.txt", "a") #opens file
-g.write("Hello World") #writes Hello World
-g.close() #closes file
+g = open("paulread.txt", "a")
+g.write("Hello World")
+g.close()
 
-g = open("paulread.txt", "r") #opens file 
-print(g.read()) #reads and prints the file 
+g = open("paulread.txt", "r")
+print(g.read())
 
 import math
 print("You have: ", math.pi, "credits")
