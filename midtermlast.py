@@ -2,12 +2,15 @@ import random #imports the random function
 part1 = True #starts part 1
 addpoint = 1 #creats addpoint global variable
 
-g = open("paulread.txt", "a")
-g.write("Hello World")
-g.close()
+g = open("paulread.txt", "a") #opens file
+g.write("Hello World") #writes Hello World
+g.close() #closes file
 
-g = open("paulread.txt", "r")
-print(g.read())
+g = open("paulread.txt", "r") #opens file 
+print(g.read()) #reads and prints the file 
+
+import math
+print("You have: ", math.pi, "credits")
 
 class Casino: #creates a class called casino
   def __init__(self, city, country): #defines the class
@@ -32,40 +35,25 @@ while part1: #tells what happens in part 1
     print("Before you go, watch me add up the sides of the dice!") #prints
     sum = 0
     sides = 1
-    while sides<7:
+    while sides < 7:
       sum = sum + sides
       print("Numbers of sides: " + str(sides) + " Dots on sides: " + str(sum))
-      part1 = False #stopping at part 1 - will not repeat
+    part1 = False #stopping at part 1 - will not repeat
 
 while part2: #starts part 2
+  def cheer_function(): #defining the cheer function
+    print("You'll get it next time.") #what the cheer function does
+
   def give_point(): #defining the give point function
-    playernumber +- addpoint #eaquivalent to playernumber = addpoint + playernumber
-    print("You got a free point and your new score is" + str(playernumber))
+    print("You get an extra point! Wooooo!!!")
 
   playernumber = random.randint(1,6) #chooses a random integer 1-6 and assigns it to playernumber
   botnumber = random.randint(1,6) #chooses a random integer 1-6 and assigns it to the bot
   if botnumber > playernumber: #compares the two numbers
     print("Uh Oh... Computer wins with a score of: " + str(botnumber)) #prints the computer wins with the integer variable
+    cheer_function()
     part2 = False #ends part
-    part3 = True #begins part 3
   else:
     print("Yay! " + str(playername) + " wins with a score of:" + str(playernumber))
-    part2 = False  #ends part 2
-    part3 = True #begins part 3
-
-while part3:
-  print("Time for a bonus! Type +1 to recieve a free point!")
-  if input() == +1:
     give_point()
-
-  def cheer_function(): #defining the cheer function
-    print("Wow! You are doing great!") #what the cheer function does
-
-  while playernumber < 2: #gives perameters to the funtion
-    cheer_function()#initiates the cheer function
-
-g = open("paulread.txt", "a")
-g.write("Hello World")
-g.close()
-g = open("paulread.txt", "r")
-print(g.read())
+    part2 = False
