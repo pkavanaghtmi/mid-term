@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class JavaProjectOne {
+	public static void main(String[] args) {
+	Scanner myObj = new Scanner(System.in);
+	System.out.println("Hi, Im your personal robotic assistant! What is your name?");
+	String username = myObj.nextLine();
+	System.out.println("Hi " + username + ". What is your favorite number?");
+	String number = myObj.nextLine();
+	int Kobe = 24;
+	System.out.println("What is your number multiplied with Kobe Bryant's number multiplied by itself is " + Kobe*Kobe + " plus " + number);
+	System.out.println("What is the best number?");
+	String Answer = myObj.nextLine();
+	System.out.println("Your answer was... + " + Answer);
+	if (Answer = "24") {
+		boolean Correct = true;
+	}
+	
+	}
+}
