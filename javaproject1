@@ -1,0 +1,20 @@
+import java.util.Scanner; //imports java scanner
+
+public class JavaProjectOne { //makes a public class JavaProject1
+	public static void main(String[] args) { //makes a string PUblic static void
+	Scanner myObj = new Scanner(System.in); //new scanner obj
+	System.out.println("Hi, Im your personal robotic assistant! What is your name?"); //prompts user to inmput name 
+	String username = myObj.nextLine(); //makes a string for username
+	System.out.println("Hi " + username + ". What is your favorite number?"); //prints the username back
+	String number = myObj.nextLine(); //makes a string for number
+	int Kobe = 24; //sets int Kobe
+	System.out.println("What is your number multiplied with Kobe Bryant's number multiplied by itself is " + Kobe*Kobe + " plus " + number); //adds your number and kobe's number
+	System.out.println("What is the best number?"); //prints question
+	String Answer = myObj.nextLine(); //makes a string for the answer
+	System.out.println("Your answer was... + " + Answer); //prints response
+	if (Answer = "24") { //defines correct answer
+		boolean Correct = true; //sees if the answer is true
+	}
+	
+	}
+}
